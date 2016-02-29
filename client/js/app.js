@@ -1,3 +1,4 @@
+// canvas request for all browsers
 var iosocket;
 var pollOneH = 0;
 var poll1;
@@ -13,9 +14,9 @@ function animation(poll1,text)
     var content = canvas.getContext("2d");
 
     // clear canvas
-    content.clearRect(0, 0, 460, 540);
+    content.clearRect(0, 0, 460, 470);
 
-    content.fillStyle = 'black';
+    content.fillStyle = '#025F70';
     content.textAlign = 'center';
     content.font = '20pt Calibri';
 
@@ -25,10 +26,10 @@ function animation(poll1,text)
         potValue = pollOneH*2;
     }
 
-    content.fillText('Potmeter value: ' + potValue, text.x, text.y);
+    content.fillText('Magnetic Field Value: ' + potValue, text.x, text.y);
 
     // render graph
-    content.fillStyle = 'orange';
+    content.fillStyle = '#39E5E5';
     content.fillRect(poll1.x,(poll1.y-poll1.h),poll1.w,poll1.h);
 
     content.fill();
@@ -67,10 +68,11 @@ function initPoll()
 {
     poll1 = {
         x: 10,
-        y: 540,
+        y: 470,
         w: 440,
         h: 0
     }
+
     text = {
         x:poll1.w/2,
         y:100

@@ -22,8 +22,8 @@ function startServer(route,handle,debug)
 	  var content = route(handle,pathname,response,request,debug);
 	}
 	
-	var httpServer = http.createServer(onRequest).listen(1337, function(){
-		console.log("Listening at: http://localhost:1337");
+	var httpServer = http.createServer(onRequest).listen(3000, function(){
+		console.log("Listening at: http://localhost:3000");
 		console.log("Server is up");
 	}); 
 	serialListener(debug);

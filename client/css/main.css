@@ -1,25 +1,101 @@
 body {
     margin: 0px;
     padding: 0px;
+    color:  #10968D;
+    background:#D1CDC1;
+    font-family: "Roboto Slab", Georgia, serif;
+    font-size: 26px;
 }
+
+#header {
+    background-color: rgba(0, 0, 0, 0.31);
+    border-bottom: 5px solid rgba(0, 0, 0, 0.2);
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-family: "Pacifico", Georgia, serif;
+}
+
+.inner {
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+#site_title {
+    float: left;
+    font-family: "Pacifico", Georgia, serif;
+    font-size: 26px;
+    color: #F7E6D4;
+}
+
+
+.menu {
+    list-style: none;
+    display: inline-block;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+}
+
+ul, menu, dir {
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 600px;
+}
+
+.menu-main a {
+    font-size: 13px;
+    line-height: 19px;
+    color: #F7E6D4;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 13px 7px;
+}
+
 #rData{
     float:left;
-    margin-left:100px;
+    margin-top:50px;
+    margin-left:175px;
     margin-right:auto;
     width:470px;
+    text-transform: uppercase;
+    font-size: 18px;
 }
 #sData{
-    float: left;
-    margin-left:100px;
-    margin-right:auto;
-    width:470px;
+    float: right;
+    margin-top:50px;
+    margin-left:auto;
+    margin-right:175px;
+    width:420px;
+    text-transform: uppercase;
+    font-size: 18px;
 }
 h2{
     text-align:center;
+    color: #10968D;
 }
 #myCanvas {
-    border: 2px dashed grey;
+    border: 2px dashed #10968D;
 }
-#btnHolder, #sliderTxt{
+#btnHolder{
     text-align:center;
+    padding-bottom: 100px;
+}
+
+#sliderTxt{
+    text-align:center;
+    font-size: 26px;
+    font-family: "Roboto Slab", Georgia, serif;
+}
+#dimmerTxt{
+    text-align:center;
+    font-size: 26px;
+    font-family: "Roboto Slab", Georgia, serif;
 }
