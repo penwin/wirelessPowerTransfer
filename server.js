@@ -6,7 +6,7 @@ SerialPort = require("serialport").SerialPort
 
 var socketServer;
 var serialPort;
-var portName = '/dev/tty.usbmodemFD121'; //change this to your Arduino port
+var portName = '/dev/cu.HC-05-DevB'; //change this to your Arduino port
 var sendData = "";
 
 // handle contains locations to browse to (vote and poll); pathnames.
